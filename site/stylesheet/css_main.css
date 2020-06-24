@@ -1,0 +1,9 @@
+/* This is the stylesheet/css of the file main_css.html */ 
+header {
+	text-align: center;
+	background-color: #005599;
+	color: white;
+	font-family: Algerian; 
+
+	margin: 0;
+}
