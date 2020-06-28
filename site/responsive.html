@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive testing</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		h1{
+			margin-bottom: 15px;
+		}
+
+		.box {
+			width: 100%;
+		}
+		p {
+			width: 90%;
+			height: 150px;
+			background-color: lightgreen;
+			color: black;
+			border: 1px solid black;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@media (min-width: 1023px) {
+			.col-lg-3 {
+				float: left;
+				width: 25%;
+				border: 1px solid green;
+			}
+		}
+		@media (max-width: 1022px) {
+			.col-md-6 {
+				float: left;
+				width: 50%;
+				border: 1px solid green;
+				background-color: black;
+			}
+			p {
+				background-color: pink;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Responsive design testing</h1>
+<div class="box">
+  <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 2 Wow this is cool</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 5 This is cool</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
+  <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
+</div>
+
+</body>
+</html>
