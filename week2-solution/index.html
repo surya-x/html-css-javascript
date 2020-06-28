@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hot Springs</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<style type="text/css">
+	
+	/** {
+		box-sizing: border-box;
+	}*/
+	h1 {
+		text-align: center;
+	}
+
+	.container {
+		background-color: powderblue;
+		border: 5px solid brown;
+		/*position: relative;*/
+	}
+	.item {
+		border: 1px solid black;
+		width: 30%;
+		margin: 15px;
+
+		float: left;
+		/*position: relative;*/
+	}
+	.one {
+		position: relative;
+	}
+	.two {
+		/*position: absolute;*/
+	}
+	.three {
+		/*border: 1px solid black;*/
+	}
+
+	div.container div > div {
+		position: relative;
+		font-weight: bold;
+		text-align: center;
+		background-color: #ccccb3;
+
+		border: 1px solid black;
+		width: 50%;
+		padding: 5px;
+		left: 50%;
+
+		/*top: -1px;*/
+	}
+	p {
+		/*border: 1px solid red;*/
+		padding: 5px;
+	}
+
+</style>
+</head>
+<body>
+	<h1>Hot springs</h1>
+	<!-- Top level container containing all the menu items -->
+	<div class = "container">
+
+	<!-- Menu item #1 -->
+	<div class="one item">
+		<div>Paneer</div>
+		<p>
+			Paneer is a fresh cheese common in the Indian subcontinent. It is an unaged, non-melting soft cheese made by curdling milk with a fruit- or vegetable-derived acid, such as lemon juice. Its acid-set form, (cheese curd) before pressing, is called chhena.
+		</p>
+	</div>
+
+	<!-- Menu item #2 -->
+	<div class="two item">
+		<div>Pasta</div>
+		<p>
+			Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking.
+		</p>
+	</div>
+	
+	<!-- Menu item #3 -->
+	<div class="three item">
+		<div>Pizza</div>
+		<p>
+			Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often ...
+			Main ingredients‎: ‎Dough, sauce
+		</p>
+	</div>
+	<div style="clear: both;"></div>
+	</div>
+
+</body>
+</html>
