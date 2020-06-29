@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Hot Springs</title>
-<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 <style type="text/css">
 	
 	* {
@@ -11,34 +11,31 @@
 		margin-left: 0px;
 		margin-right: 0px;
 	}
+	body {
+		background-color: #e6e6ff;
+	}
 	h1 {
 		text-align: center;
+		font-size: 250%;
+		font-family: Algerian;
 	}
 
 	.container {
-		background-color: powderblue;
-		border: 1px solid brown;
+
+	}
+	.menuitem {
+		float: left;
+		padding: 1%;
 	}
 	.item {
 		border: 1px solid black;
-		width: 30.5%;
-		float: left;
 		height: 190px;
 	}
-	.one {
-		margin: 2%;
-	}
-	.two {
-		margin-top: 2%;
-		margin-bottom: 2%
-	}
-	.three {
-		margin: 2%;
-	}
 
-	div.container div > div {
+	div.container div > div > div {
 		position: relative;
 		font-weight: bold;
+		font-size: 150%;
 		text-align: center;
 		background-color: #ccccb3;
 
@@ -46,12 +43,42 @@
 		width: 50%;
 		padding: 5px;
 		left: 50%;
-
-		/*top: -1px;*/
 	}
 	p {
-		/*border: 1px solid red;*/
-		padding: 5px;
+		padding: 10px;
+		font-size: 110%;
+	}
+
+	.one {
+		background-color: #9999e6;
+
+	}
+	.two {
+		background-color: #9fff80;
+	}
+	.three {
+		background-color: #ff8080;
+	}
+	@media (min-width: 992px){
+		.col-lg-4 {
+			width: 33.33%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		.col-md-6 {
+			width: 50%;
+			/*background-color: red;*/
+		}
+		.col-md-12 {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.col-sm-12 {
+			width: 100%;
+		}
 	}
 
 </style>
@@ -62,28 +89,34 @@
 	<div class = "container">
 
 	<!-- Menu item #1 -->
-	<div class="one item">
-		<div>Paneer</div>
-		<p>
-			Paneer is a fresh cheese common in the Indian subcontinent. It is an unaged, non-melting soft cheese made by curdling milk with a fruit- or vegetable-derived acid, such as lemon juice. Its acid-set form, (cheese curd) before pressing, is called chhena.
-		</p>
+	<div class = "menuitem col-lg-4 col-md-6 col-sm-12">
+		<div class="one item">
+			<div>Paneer</div>
+			<p>
+				Paneer is a fresh cheese common in the Indian subcontinent. It is an unaged, non-melting soft cheese made by curdling milk with a fruit- or vegetable-derived acid, such as lemon juice. Its acid-set form, (cheese curd) before pressing, is called chhena.
+			</p>
+		</div>
 	</div>
 
 	<!-- Menu item #2 -->
-	<div class="two item">
-		<div>Pasta</div>
-		<p>
-			Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking.
-		</p>
+	<div class = "menuitem col-lg-4 col-md-6 col-sm-12">
+		<div class="two item">
+			<div>Pasta</div>
+			<p>
+				Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking.
+			</p>
+		</div>
 	</div>
 	
 	<!-- Menu item #3 -->
-	<div class="three item">
-		<div>Pizza</div>
-		<p>
-			Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often ...
-			Main ingredients‎: ‎Dough, sauce
-		</p>
+	<div class = "menuitem col-lg-4 col-md-12 col-sm-12">
+		<div class="three item">
+			<div>Pizza</div>
+			<p>
+				Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often ...
+				Main ingredients‎: ‎Dough, sauce
+			</p>
+		</div>
 	</div>
 	<div style="clear: both;"></div>
 	</div>
